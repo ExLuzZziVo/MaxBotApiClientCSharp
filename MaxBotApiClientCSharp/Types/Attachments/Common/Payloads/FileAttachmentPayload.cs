@@ -1,0 +1,16 @@
+﻿#region
+
+using System.ComponentModel.DataAnnotations;
+
+#endregion
+
+namespace MaxBotApiClientCSharp.Types.Attachments.Common.Payloads
+{
+    public class FileAttachmentPayload: AttachmentPayload
+    {
+        /// <summary>
+        /// Используется, если повторно используется одно и то же вложение в другом сообщении
+        /// </summary>
+        public string Token { get; set; }
+    }
+}
