@@ -14,6 +14,6 @@ var messageBody = new NewMessageBody { Text = "Тест" };
 var result = await botClient.SendMessageToChatAsync(ИД_ЧАТА, messageBody);
 ```
 
-Доступен в пакетном менеджере NuGet.
+Доступен в пакетном менеджере [NuGet](https://www.nuget.org/packages/MaxBotApiClientCSharp).
 
 Зависимости CoreLib вы можете найти [тут](https://github.com/ExLuzZziVo/CoreLib).
