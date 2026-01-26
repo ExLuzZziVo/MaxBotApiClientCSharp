@@ -1,8 +1,6 @@
 ﻿#region
 
-using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
-using MaxBotApiClientCSharp.Helpers;
+using CoreLib.CORE.Helpers.Converters;
 using MaxBotApiClientCSharp.Types.Buttons;
 
 #endregion

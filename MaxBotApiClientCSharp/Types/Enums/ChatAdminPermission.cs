@@ -28,7 +28,8 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Добавление администраторов
         /// </summary>
-        [JsonStringEnumMemberName("add_admins")] AddAdmins,
+        [JsonStringEnumMemberName("add_admins")]
+        AddAdmins,
 
         /// <summary>
         /// Изменение информации о чате
@@ -39,7 +40,8 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Закрепление сообщения
         /// </summary>
-        [JsonStringEnumMemberName("pin_message")] PinMessage,
+        [JsonStringEnumMemberName("pin_message")]
+        PinMessage,
 
         /// <summary>
         /// Писать сообщения
@@ -54,7 +56,8 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Изменение ссылок на чат
         /// </summary>
-        [JsonStringEnumMemberName("edit_link")] EditLink,
+        [JsonStringEnumMemberName("edit_link")]
+        EditLink,
 
         /// <summary>
         /// Публиковать, редактировать и удалять сообщения
@@ -65,11 +68,13 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Редактировать сообщения
         /// </summary>
-        [JsonStringEnumMemberName("edit_message")] EditMessage,
+        [JsonStringEnumMemberName("edit_message")]
+        EditMessage,
 
         /// <summary>
         /// Удалять сообщения
         /// </summary>
-        [JsonStringEnumMemberName("delete_message")] DeleteMessage
+        [JsonStringEnumMemberName("delete_message")]
+        DeleteMessage
     }
 }

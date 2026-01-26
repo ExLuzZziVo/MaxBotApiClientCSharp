@@ -16,31 +16,37 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Бот набирает сообщение
         /// </summary>
-        [JsonStringEnumMemberName("typing_on")] TypingOn,
+        [JsonStringEnumMemberName("typing_on")]
+        TypingOn,
 
         /// <summary>
         /// Бот отправляет фото
         /// </summary>
-        [JsonStringEnumMemberName("sending_photo")] SendingPhoto,
+        [JsonStringEnumMemberName("sending_photo")]
+        SendingPhoto,
 
         /// <summary>
         /// Бот отправляет видео
         /// </summary>
-        [JsonStringEnumMemberName("sending_video")] SendingVideo,
+        [JsonStringEnumMemberName("sending_video")]
+        SendingVideo,
 
         /// <summary>
         /// Бот отправляет аудиофайл
         /// </summary>
-        [JsonStringEnumMemberName("sending_audio")] SendingAudio,
+        [JsonStringEnumMemberName("sending_audio")]
+        SendingAudio,
 
         /// <summary>
         /// Бот отправляет файл
         /// </summary>
-        [JsonStringEnumMemberName("sending_file")] SendingFile,
+        [JsonStringEnumMemberName("sending_file")]
+        SendingFile,
 
         /// <summary>
         /// Бот помечает сообщения как прочитанные
         /// </summary>
-        [JsonStringEnumMemberName("mark_seen")] MarkSeen
+        [JsonStringEnumMemberName("mark_seen")]
+        MarkSeen
     }
 }

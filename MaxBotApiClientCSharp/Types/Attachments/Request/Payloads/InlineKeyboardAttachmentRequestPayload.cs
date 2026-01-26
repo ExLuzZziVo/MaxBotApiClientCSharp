@@ -2,8 +2,8 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using CoreLib.CORE.Helpers.Converters;
 using CoreLib.CORE.Resources;
-using MaxBotApiClientCSharp.Helpers;
 using MaxBotApiClientCSharp.Types.Buttons;
 
 #endregion

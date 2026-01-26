@@ -16,22 +16,26 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Событие, возникающее, когда бот присоединился к чату
         /// </summary>
-        [JsonStringEnumMemberName("bot_added")] BotAdded,
+        [JsonStringEnumMemberName("bot_added")]
+        BotAdded,
 
         /// <summary>
         /// Событие, возникающее, когда бот был удален из чата
         /// </summary>
-        [JsonStringEnumMemberName("bot_removed")] BotRemoved,
+        [JsonStringEnumMemberName("bot_removed")]
+        BotRemoved,
 
         /// <summary>
         /// Событие, возникающее, когда пользователь нажал кнопку 'Start'
         /// </summary>
-        [JsonStringEnumMemberName("bot_started")] BotStarted,
+        [JsonStringEnumMemberName("bot_started")]
+        BotStarted,
 
         /// <summary>
         /// Событие, возникающее, когда пользователь остановил чат
         /// </summary>
-        [JsonStringEnumMemberName("bot_stopped")] BotStopped,
+        [JsonStringEnumMemberName("bot_stopped")]
+        BotStopped,
 
         /// <summary>
         /// Событие, возникающее, когда было изменено название чата
@@ -42,22 +46,26 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Событие, возникающее, когда диалог был очищен
         /// </summary>
-        [JsonStringEnumMemberName("dialog_cleared")] DialogCleared,
+        [JsonStringEnumMemberName("dialog_cleared")]
+        DialogCleared,
 
         /// <summary>
         /// Событие, возникающее, когда пользователь отключил уведомления
         /// </summary>
-        [JsonStringEnumMemberName("dialog_muted")] DialogMuted,
+        [JsonStringEnumMemberName("dialog_muted")]
+        DialogMuted,
 
         /// <summary>
         /// Событие, возникающее, когда пользователь удалил чат
         /// </summary>
-        [JsonStringEnumMemberName("dialog_removed")] DialogRemoved,
+        [JsonStringEnumMemberName("dialog_removed")]
+        DialogRemoved,
 
         /// <summary>
         /// Событие, возникающее, когда пользователь включил уведомления
         /// </summary>
-        [JsonStringEnumMemberName("dialog_unmuted")] DialogUnmuted,
+        [JsonStringEnumMemberName("dialog_unmuted")]
+        DialogUnmuted,
 
         /// <summary>
         /// Событие, возникающее, когда пользователь нажал на кнопку
@@ -74,7 +82,8 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Событие, возникающее при редактировании сообщения
         /// </summary>
-        [JsonStringEnumMemberName("message_edited")] MessageEdited,
+        [JsonStringEnumMemberName("message_edited")]
+        MessageEdited,
 
         /// <summary>
         /// Событие, возникающее при удалении сообщения
@@ -85,11 +94,13 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Событие, возникающее, когда пользователь был добавлен в чат
         /// </summary>
-        [JsonStringEnumMemberName("user_added")] UserAdded,
+        [JsonStringEnumMemberName("user_added")]
+        UserAdded,
 
         /// <summary>
         /// Событие, возникающее, когда пользователь был удален из чата
         /// </summary>
-        [JsonStringEnumMemberName("user_removed")] UserRemoved
+        [JsonStringEnumMemberName("user_removed")]
+        UserRemoved
     }
 }

@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using CoreLib.CORE.Helpers.StringHelpers;
 using CoreLib.CORE.Resources;
@@ -19,6 +20,7 @@ namespace MaxBotApiClientCSharp.Types.Attachments.Request.Payloads
     /// </remarks>
     public class ImageAttachmentRequestPayload
     {
+        [JsonConstructor]
         private ImageAttachmentRequestPayload() { }
 
         /// <summary>

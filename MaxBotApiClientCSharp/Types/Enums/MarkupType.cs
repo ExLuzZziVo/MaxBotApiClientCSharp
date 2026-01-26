@@ -46,6 +46,7 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Упоминание пользователя
         /// </summary>
-        [JsonStringEnumMemberName("user_mention")] UserMention
+        [JsonStringEnumMemberName("user_mention")]
+        UserMention
     }
 }

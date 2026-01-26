@@ -1,7 +1,9 @@
 ﻿#region
 
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using MaxBotApiClientCSharp.Types.Operations.Bots.EditBotInfo;
 using MaxBotApiClientCSharp.Types.Users;
 
 #endregion
@@ -19,6 +21,23 @@ namespace MaxBotApiClientCSharp.Client
         public virtual async Task<BotInfo> GetBotInfoAsync()
         {
             return await ExecuteAsync<BotInfo>("/me", HttpMethod.Get);
+        }
+
+        // ToDo нет информации о методе в официальной документации
+        /// <summary>
+        /// Редактирует информацию о боте
+        /// </summary>
+        /// <param name="botInfo">Параметры редактирования информации о боте</param>
+        /// <returns>Отредактированная информация о боте</returns>
+        /// <exception cref="ArgumentNullException">Параметр <paramref name="botInfo"/> обязателен</exception>
+        public virtual async Task<BotInfo> EditBotInfoAsync(EditBotInfoOperation botInfo)
+        {
+            if (botInfo == null)
+            {
+                throw new ArgumentNullException(nameof(botInfo));
+            }
+
+            return await ExecuteAsync<BotInfo>("/me", HttpMethodPatch, botInfo);
         }
     }
 }

@@ -6,11 +6,11 @@ using System.Text.Json.Serialization;
 
 namespace MaxBotApiClientCSharp.Types.Users
 {
-	/// <summary>
-	/// Информация о пользователе с фотографией
-	/// </summary>
-	[JsonDerivedType(typeof(BotInfo))]
-	public class UserWithPhoto: User
+    /// <summary>
+    /// Информация о пользователе с фотографией
+    /// </summary>
+    [JsonDerivedType(typeof(BotInfo))]
+    public class UserWithPhoto: User
     {
         /// <summary>
         /// Описание пользователя
