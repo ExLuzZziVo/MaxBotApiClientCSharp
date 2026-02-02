@@ -59,6 +59,7 @@ namespace MaxBotApiClientCSharp.Types.Enums
         [JsonStringEnumMemberName("edit_link")]
         EditLink,
 
+        /// ToDo Сервер не может выполнить десериализацию этого значения
         /// <summary>
         /// Публиковать, редактировать и удалять сообщения
         /// </summary>
@@ -68,13 +69,20 @@ namespace MaxBotApiClientCSharp.Types.Enums
         /// <summary>
         /// Редактировать сообщения
         /// </summary>
-        [JsonStringEnumMemberName("edit_message")]
+        [JsonStringEnumMemberName("edit")]
         EditMessage,
 
         /// <summary>
         /// Удалять сообщения
         /// </summary>
-        [JsonStringEnumMemberName("delete_message")]
-        DeleteMessage
+        [JsonStringEnumMemberName("delete")]
+        DeleteMessage,
+
+        // ToDo нет информации в официальной документации
+        /// <summary>
+        /// ???
+        /// </summary>
+        [JsonStringEnumMemberName("view_stats")]
+        ViewStats
     }
 }

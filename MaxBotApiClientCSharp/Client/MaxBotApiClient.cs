@@ -8,6 +8,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using CoreLib.CORE.Helpers.ObjectHelpers;
 using CoreLib.CORE.Helpers.StringHelpers;
+using MaxBotApiClientCSharp.Types.Errors;
 
 #endregion
 
@@ -90,9 +91,32 @@ namespace MaxBotApiClientCSharp.Client
 
         protected virtual async Task<TResult> ProcessResponseAsync<TResult>(HttpResponseMessage response)
         {
-            response.EnsureSuccessStatusCode();
-
             var responseContent = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                MaxBotApiClientError error = null;
+
+                if (!responseContent.IsNullOrEmptyOrWhiteSpace())
+                {
+                    try
+                    {
+                        error = JsonSerializer.Deserialize<MaxBotApiClientError>(responseContent, DefaultJsonSerializerOptions);
+                    }
+                    catch
+                    {
+                        // ignored
+                    }
+                }
+
+                error ??= new MaxBotApiClientError
+                {
+                    Code = response.StatusCode.ToString("D"),
+                    Message = response.ReasonPhrase
+                };
+
+                throw new MaxBotApiClientException(error);
+            }
 
             return JsonSerializer.Deserialize<TResult>(responseContent, DefaultJsonSerializerOptions);
         }
